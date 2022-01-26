@@ -1,0 +1,17 @@
+4f078c518ac82d0874ecd100509cafaa
+
+por id 
+http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=4f078c518ac82d0874ecd100509cafaa
+
+
+por id 
+api.openweathermap.org/data/2.5/weather?id={city id}&appid={API key}
+
+por name 
+api.openweathermap.org/data/2.5/weather?q={city name}&appid=4f078c518ac82d0874ecd100509cafaa
+
+
+
+api.openweathermap.org/data/2.5/weather&appid=4f078c518ac82d0874ecd100509cafaa
+
+

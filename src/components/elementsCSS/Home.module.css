@@ -1,0 +1,78 @@
+.container{
+    background-image: url('../../utils/fondohome.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+form input[type='text']{
+
+    display: block;
+    width: 70vw;
+    height: 4vh;
+    border-radius: 2rem;
+    border:none;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+form input[type='submit']{
+    margin-top: .4rem;
+    width: 7rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 2px 2px 4px #000000;
+    
+}
+.link{
+    text-decoration: none;
+}
+.about{
+    background-color: #ffffff00;
+    border: none;
+    margin-left: 18rem;
+    margin-top: 1rem;
+    width: 20vw;
+    font-size: 1.2rem;
+    text-shadow: 4px 2px 2px #000000;
+    color: #ffffff;
+    cursor: pointer;
+
+
+}
+
+@media screen and (min-width:473px ){
+    .about{
+        background-color: #ffffff00;
+        border: none;
+        margin-left: 60rem;
+        /* margin-top: 1rem; */
+        width: 20vw;
+        
+        font-size: 1.2rem;
+        text-shadow: 4px 2px 2px #000000;
+        color: #ffffff;
+    
+    
+    }
+    form input[type='text']{
+
+        display: block;
+        width: 30vw;
+        height: 4vh;
+        border-radius: 2rem;
+        border:none;
+        box-shadow: 2px 2px 4px #000000;
+    }
+}

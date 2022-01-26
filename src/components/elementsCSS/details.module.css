@@ -1,0 +1,122 @@
+.contain{
+    background: linear-gradient(45deg, #11468F, #ffffff, #11468F);
+    position: absolute;
+    z-index: 1000;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    
+}
+.none{
+    display: none;
+}
+
+.subcontain{
+    background-color: #ffffff99;
+    display: grid;
+    /* grid-template-columns: repeat(4 1fr);
+    grid-template-rows: repeat(5 1fr); */
+    grid-template-areas: 
+    "arow      arow      arow     arow"
+    "title     title     title    title"
+    "humidity  humidity  pressure pressure"
+    "tempmin   tempmin   tempmax  tempmax"
+    "wind      wind      wind     wind"
+    ;
+    justify-content: center;
+    text-align: center;
+    gap:.1rem 1rem;
+    justify-self: center;
+    width: 90vw;
+    height: 80vh;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 4px #000000;
+}
+
+.arow{
+    grid-area: arow;
+    margin:auto;
+        background: linear-gradient(0deg, white, blue, blue, white,white);
+        background-position: center;
+        background-size: 100% 100px;
+        transition: all .9s;
+        width: 8rem;
+        height: 2rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        color: #ffffff;
+        border: none;
+        box-shadow: 4px 4px 2px #000000;
+        font-weight: bold;
+        font-size: 1.2rem;
+      
+    }
+    
+    .arow:hover{
+        background-position: 0 50px;
+        transition: all .9s;
+        box-shadow: -4px 4px 2px #000000;
+    
+      
+    }
+
+
+.title{
+    grid-area: title;
+
+}
+
+.humidity{
+    grid-area: humidity;
+
+}
+.pressure{
+    grid-area: pressure;
+    margin-right: 1rem;
+
+
+}
+
+.tempmin{
+    grid-area: tempmin;
+
+}
+
+.tempmax{
+    grid-area: tempmax;
+    margin-right: 1rem;
+
+
+}
+
+.wind{
+    grid-area: wind;
+
+}
+
+@media screen and (min-width:473px ){
+    .subcontain{
+        background-color: #ffffff99;
+        display: grid;
+        /* grid-template-columns: repeat(4 1fr);
+        grid-template-rows: repeat(5 1fr); */
+        grid-template-areas: 
+        "arow      arow      arow     arow"
+        "title     title     title    title"
+        "humidity  humidity  pressure pressure"
+        "tempmin   tempmin   tempmax  tempmax"
+        "wind      wind      wind     wind"
+        ;
+        justify-content: center;
+        text-align: center;
+        gap:.1rem 1rem;
+        justify-self: center;
+        width: 30vw;
+        height: 80vh;
+        border-radius: 2rem;
+        box-shadow: 5px 5px 4px #000000;
+    }
+}

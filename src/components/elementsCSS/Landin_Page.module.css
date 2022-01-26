@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: o;
+    padding: 0;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+.container{
+    background-image: url('../../utils/fondohome.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.subcontainer{
+    background-color: #141E6180;
+    width: 82vw;
+    height: 92vh;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 6px 2px 3px #ffffff80,
+    -6px 2px 3px #000000;
+
+}
+.title{
+    align-self: center;
+    font-size: 2rem;
+    text-shadow: 2px -4px 3px #000000;
+    font-family: 'Permanent Marker', cursive;
+    color: #FDA65D;
+}
+.conten{
+    background-color: #ffffff70;
+    width: inherit;
+    height: 40vh;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    justify-self: center;
+    align-self: end;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: -1px -2px 3px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.btn{
+    background: linear-gradient(0deg, white, blue, blue, white,white);
+    background-position: center;
+    background-size: 100% 100px;
+    transition: all .9s;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    box-shadow: 4px 4px 2px #000000;
+    font-weight: bold;
+    font-size: 1.2rem;
+  
+}
+
+.btn:hover{
+    background-position: 0 50px;
+    transition: all .9s;
+    box-shadow: -4px 4px 2px #000000;
+
+  
+}
+
+.conten p{
+    margin-top: 3rem;
+    font-size: 1rem;
+
+}
+.logos{
+    width: 100%;
+    height: 13vh;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+    gap:.5rem;
+}
+.icon1{
+    background-image: url('../../SVG/icon_01.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 4.5rem;
+    height: 4.5rem;
+    border:1px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px #000000;
+
+
+}
+.icon2{
+    background-image: url('../../SVG/icons_02.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 4.5rem;
+    height: 4.5rem;
+    border:1px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px #000000;
+
+}
+.icon3{
+    background-image: url('../../SVG/icons_03.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 4.5rem;
+    height: 4.5rem;
+    border:1px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px #000000;
+
+    
+}
+
+@media screen and (min-width:700px ){
+     
+    .logos{
+        width: 100%;
+        height: 13vh;
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        align-content: center;
+        gap:4rem;
+    }
+}

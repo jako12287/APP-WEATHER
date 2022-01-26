@@ -1,0 +1,110 @@
+
+.container{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.name{
+    font-size: 1.8rem;
+    color:#FDA65D;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 4px 2px 2px #000000;
+
+}
+
+.temp{
+    font-size: 6rem;
+    margin: 0;
+    margin-bottom: 12rem;
+    padding: 0;
+    z-index: 999;
+    color: #ffffff99;
+    text-shadow: 4px 2px 2px #000000;
+
+}
+.Stemp{
+    display: flex;
+    margin: auto;
+    font-weight: bold;
+    
+}
+.Stemp :nth-child(2){
+    color: #ffffff99;
+    text-shadow: 4px 2px 2px #000000;
+
+
+}
+.btn{
+    background: linear-gradient(0deg, white, blue, blue, white,white);
+    background-position: center;
+    background-size: 100% 100px;
+    transition: all .9s;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    box-shadow: 4px 4px 2px #000000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 995;
+  
+}
+
+.btn:hover{
+    background-position: 0 50px;
+    transition: all .9s;
+    box-shadow: -4px 4px 2px #000000;
+
+  
+}
+
+.img{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 890;
+    width: 100vw;
+    margin-top: 5rem;
+}
+
+.descrip{
+    z-index: 997;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-shadow: 4px 2px 2px #000000;
+    color: #ffffff;
+    
+
+}
+
+@media screen and (min-width:473px ){
+    .img{
+        z-index: 890;
+        width: 30vw;
+        align-self: flex-start;
+        margin-left: 29rem;
+    }
+    .temp{
+        font-size: 6rem;
+        margin: 0;
+        margin-bottom: 9rem;
+        padding: 0;
+        z-index: 999;
+        color: #ffffff99;
+        text-shadow: 4px 2px 2px #000000;
+    
+    }
+    .Stemp{
+        display: flex;
+        margin: auto;
+        font-weight: bold;
+        
+    }
+  
+    
+}
