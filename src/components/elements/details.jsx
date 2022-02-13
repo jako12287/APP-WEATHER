@@ -20,38 +20,38 @@ export const Details = ()=>{
     return(
         <div className={on}>
           {$city.map((el)=><div className={styles.subcontain} key={el.id}>
-             <button className={styles.arow} onClick={handleClick}>Back</button>
-                                <section className={styles.title}>
+                                <div className={styles.title}>
                                     <p>En este momento</p> 
                                     <p>{el.description}</p>
-                                    </section>
+                                    </div>
                                 
-                                <section className={styles.humidity}>
+                                <div className={styles.humidity}>
                                     <h4>Humedad </h4> 
                                     <h5>{el.humidity}%</h5>
-                                </section>
+                                </div>
 
-                                <section className={styles.pressure}>
+                                <div className={styles.pressure}>
                                     <h4>Presion</h4>
                                     <h5>{el.pressure}mbar</h5>
-                                </section>
+                                </div>
 
-                                <section className={styles.tempmin}>
+                                <div className={styles.tempmin}>
                                         <h4>Temperatura</h4>
                                         <h4>minima</h4>  
                                         <h5>{Math.round(el.temp_min)}°C</h5>
-                                </section>
+                                </div>
 
-                                <section className={styles.tempmax}>
+                                <div className={styles.tempmax}>
                                         <h4>Temperatura</h4> 
                                         <h4>maxima</h4>
                                         <h5>{Math.round(el.temp_max)}°C</h5>
-                                </section>
+                                </div>
 
-                                <section className={styles.wind}>
+                                <div className={styles.wind}>
                                         <h4>Viento</h4>
                                         <h5>{el.winddeg}° {(el.windspeed*1000*60)/10000} Km/h</h5>
-                                </section>
+             <button className={styles.arow} onClick={handleClick}>🢁</button>
+                                </div>
 
                            </div>
         

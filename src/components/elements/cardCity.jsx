@@ -14,15 +14,19 @@ export const CardCity = ({name, id, temp, description, icon})=>{
     }
     return(
         <div className={styles.container}>
-
            <h3 className={styles.name}>{name}</h3>
-           <section className={styles.Stemp}>
+
+           <div className={styles.Stemp}>
                 <p className={styles.temp}>{temp} </p>
                 <p>°C</p>
-           </section>
+           </div>
+           <div className={styles.contenimg}>
            <img className={styles.img} src={`http://openweathermap.org/img/wn/${icon}@4x.png`}/>
+
+           </div>
            <p className={styles.descrip}>{description}</p>
            <button className={styles.btn} onClick={handleClick}>detalles</button>
+       
         </div>
     )
 }
