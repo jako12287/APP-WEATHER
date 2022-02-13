@@ -1,14 +1,13 @@
 import { GET_NAME, DISPLAY } from './types'
 import axios from 'axios'
 
-const Key = '4f078c518ac82d0874ecd100509cafaa'
 
 export const getName = (value)=>{
    return async(dispatch)=>{
       try {
          
          let get = await axios
-         .get(`http://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${Key}&units=metric&lang=es`)
+         .get(`https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=4f078c518ac82d0874ecd100509cafaa&units=metric&lang=es`)
          let data = await get.data
          let res ={
             id:data.id,
